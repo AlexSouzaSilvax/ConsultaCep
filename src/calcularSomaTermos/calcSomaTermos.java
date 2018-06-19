@@ -1,15 +1,14 @@
-package calculandopa;
+package calcularSomaTermos;
 
 import javax.swing.JOptionPane;
 
 /**
  *
- * @author alex Terça-Feira, 19 de Junho de 2018, 00:22
- * 
- * GUANABARA E O REI 
+ * @author alex Terça-Feira, 19 de Junho de 2018, 03:25
+ *
+ * GUANABARA E O REI
  */
-
-public class calcTermoPA {
+public class calcSomaTermos {
 
     public static void main(String[] args) {
 
@@ -20,12 +19,14 @@ public class calcTermoPA {
         int r = a2 - a1;
         JOptionPane.showMessageDialog(null, "A Razao é :  " + r);
 
-        int n = Integer.parseInt(JOptionPane.showInputDialog("Informa a posiçao do termo:\nEx: Centesimo Termo da P.A = 100."));
+        int n = Integer.parseInt(JOptionPane.showInputDialog("Um termo para ser somado.\nEx: 50 primeiros termos\nInforma a posiçao do termo:"));
 
         int aN = a1 + (n - 1) * r;
 
+        int sN = (a1 + aN) * n / 2;
+
         JOptionPane.showMessageDialog(
-                null, "O valor do " + n + "º Termo é :  " + aN);
+                null, "A soma dos " + n + "º Termos é :  " + sN);
 
         JOptionPane.showMessageDialog(
                 null, "1º Razao da P.A: " + a1
@@ -33,6 +34,7 @@ public class calcTermoPA {
                 + "\n3º Razao da P.A: " + a3
                 + "\nValor da Razao: " + r
                 + "\nPosiçao do Termo: " + n
-                + "\nO valor do " + n + "º Termo é : " + aN);
+                + "\nA soma dos " + n + "º Termos é : " + sN);
+
     }
 }
