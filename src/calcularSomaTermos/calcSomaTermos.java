@@ -26,7 +26,7 @@ public class calcSomaTermos {
         int sN = (a1 + aN) * n / 2;
 
         JOptionPane.showMessageDialog(
-                null, "A soma dos " + n + "º Termos é :  " + sN);
+                null, "A soma dos " + n + "º Primeiros Termos é :  " + sN);
 
         JOptionPane.showMessageDialog(
                 null, "1º Razao da P.A: " + a1
@@ -34,7 +34,7 @@ public class calcSomaTermos {
                 + "\n3º Razao da P.A: " + a3
                 + "\nValor da Razao: " + r
                 + "\nPosiçao do Termo: " + n
-                + "\nA soma dos " + n + "º Termos é : " + sN);
+                + "\nA soma dos " + n + "º Primeiros Termos é : " + sN);
 
     }
 }
