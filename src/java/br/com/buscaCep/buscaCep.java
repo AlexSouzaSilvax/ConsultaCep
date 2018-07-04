@@ -10,8 +10,7 @@ public class buscaCep {
 
     public static void main(String[] args) {
 
-        // WebServiceCep webServiceCep = WebServiceCep.searchCep("Seu cep");
-        WebServiceCep webServiceCep = WebServiceCep.searchCep(JOptionPane.showInputDialog("Entre com seu Cep:"));
+        WebServiceCep webServiceCep = WebServiceCep.searchCep(JOptionPane.showInputDialog("Informe seu Cep:"));
 
         if (webServiceCep.wasSuccessful()) {
 
